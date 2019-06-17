@@ -90,10 +90,10 @@ node {
     sh(command)
   }
 
-  stage('running traffic') {
-      sshagent(credentials: ['jenkins']) {
-        sh "ssh -o StrictHostKeyChecking=no -l jenkins 172.16.250.30 'cd /trex; sudo /trex/t-rex-64  -f /trex/cap2/cnn_dns.yaml -d 60'"
-      }
-  }
+  //stage('running traffic') {
+  //    sshagent(credentials: ['jenkins']) {
+  //      sh "ssh -o StrictHostKeyChecking=no -l jenkins 172.16.250.30 'cd /trex; sudo /trex/t-rex-64  -f /trex/cap2/cnn_dns.yaml -d 60'"
+  //    }
+  //}
 
 }
